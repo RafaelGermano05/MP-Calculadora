@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Taxa</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <h1>Calculadora de Taxa</h1>
+    <div id="debito" class="container">
+        <h2>Débito</h2>
+        <input type="number" id="valorDebito" placeholder="Valor de referência">
+        <input type="number" id="taxaConcorrenteDebito" placeholder="Taxa Concorrente (%)">
+        <input type="number" id="taxaMPDebito" placeholder="Taxa Mercado Pago (%)">
+        <button onclick="calcular('Debito')">Calcular</button>
+        <p class="result" id="resultadoDebito"></p>
+    </div>
+
+    <div id="credito" class="container">
+        <h2>Crédito</h2>
+        <input type="number" id="valorCredito" placeholder="Valor de referência">
+        <input type="number" id="taxaConcorrenteCredito" placeholder="Taxa Concorrente (%)">
+        <input type="number" id="taxaMPCredito" placeholder="Taxa Mercado Pago (%)">
+        <button onclick="calcular('Credito')">Calcular</button>
+        <p class="result" id="resultadoCredito"></p>
+    </div>
+
+    <div id="parcelado" class="container">
+        <h2>Parcelado</h2>
+        <input type="number" id="valorParcelado" placeholder="Valor de referência">
+        <input type="number" id="taxaConcorrenteParcelado" placeholder="Taxa Concorrente (%)">
+        <input type="number" id="taxaMPParcelado" placeholder="Taxa Mercado Pago (%)">
+        <select id="parcelas">
+            <option value="2">2x</option>
+            <option value="3">3x</option>
+            <option value="4">4x</option>
+            <option value="5">5x</option>
+            <option value="6">6x</option>
+            <option value="7">7x</option>
+            <option value="8">8x</option>
+            <option value="9">9x</option>
+            <option value="10">10x</option>
+            <option value="11">11x</option>
+            <option value="12">12x</option>
+        </select>
+        <br>
+        <button onclick="calcular('Parcelado')">Calcular</button>
+        <p class="result" id="resultadoParcelado"></p>
+    </div>
+
+    <div id="total" class="container">
+        <h2>Total Geral</h2>
+        <p class="result" id="resultadoTotal"></p>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
