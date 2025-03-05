@@ -1,7 +1,8 @@
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0 auto;
-    padding: 0 auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -9,6 +10,7 @@ body {
     background-color: #191931;
     text-align: center;
 }
+
 .container {
     background: rgb(56, 54, 85);
     width: 50%;
@@ -33,7 +35,7 @@ input, #parcelas {
 
 
 button {
-    margin: 15px 10px 0px 10px;
+    margin: 15px 40px 0px 40px;
     background-color: #007fc9c5;
     color: rgb(246, 255, 255);
     border: none;
